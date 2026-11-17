@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta name="theme-color" content="#05060f">
+<meta name="description" content="Neon Skyline: Rescue Run — a 90-second neon hover-bike rescue runner. Dodge hazards, chain combos, rescue SOS pods across a procedural synthwave city.">
+<title>Neon Skyline: Rescue Run</title>
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #05060f; }
+  #game { position: fixed; inset: 0; width: 100%; height: 100%; display: block; touch-action: none; cursor: crosshair; }
+  #game:focus-visible { outline: 2px solid #00e5ff; outline-offset: -2px; }
+  /* Read aloud, never shown: the status line screen readers announce. */
+  #status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+</style>
+</head>
+<body>
+<canvas id="game" tabindex="0" role="application" aria-label="Neon Skyline: Rescue Run. A 90-second neon hover-bike rescue game. Steer with left and right arrows or A and D. Change hover height with up and down arrows or W and S. Or drag on the screen with mouse or finger. Press Space to launch, P to pause, M to mute."></canvas>
+<p id="status" role="status" aria-live="polite"></p>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
